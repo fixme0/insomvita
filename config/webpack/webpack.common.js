@@ -8,7 +8,7 @@ import appPaths from './paths';
 import { getJsRules, getStyleRules, getFilesRules, getTemplateRules } from './rules';
 
 export const webpackCommon = ({ isDevelopment, mode }) => {
-  const { entryPath, templatePath, outputPath } = appPaths;
+  const { entryPath, templatePaths, outputPath } = appPaths;
 
   return {
     entry: entryPath,
@@ -47,11 +47,10 @@ export const webpackCommon = ({ isDevelopment, mode }) => {
 
     plugins: [
       new ProgressPlugin(),
-      new HtmlWebpackPlugin({
-        template: templatePath
-      }),
+      ...templatePaths.map((options) => new HtmlWebpackPlugin(options)),
       new SpriteLoaderPlugin({
-        plainSprite: true
+        plainSprite: true,
+        symbolId: 'sprite#[name]'
       }),
       new DefinePlugin({
         __DEV__: isDevelopment,

@@ -1,0 +1,49 @@
+@import './vars'
+@import './utils/reset'
+@import './utils/fonts'
+@import './elements/mainImageWithGradient'
+@import './elements/nav'
+@import './elements/sidebar'
+@import './elements/footer'
+
+body, html
+    overflow: hidden
+    line-height: 1
+
+.wrapper
+    width: 100vw
+    height: 100vh
+    display: flex
+    font-family: 'SF Pro Display', sans-serif
+
+    &-theme
+        &--dark
+            background-color: #000000
+            color: #ffffff
+
+.section
+    display: flex
+    height: 100%
+    flex-shrink: 0
+
+    &-element
+        &-content
+            &--center
+                flex-grow: 1
+                display: flex
+                flex-direction: column
+                justify-content: center
+
+    &--left
+        justify-content: center
+        width: 45%
+    &--right
+        width: 55%
+        flex-direction: column
+        padding-right: 103px
+    
+    
+.title
+    font-size: 30px
+    font-weight: 400
+    text-transform: uppercase

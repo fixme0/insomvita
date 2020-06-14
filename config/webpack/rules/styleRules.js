@@ -31,7 +31,7 @@ export const getStyleRules = (mode) => {
             options: {
               plugins: [
                 require('autoprefixer')({
-                  browsers: ['last 3 versions']
+                  overrideBrowserslist: ['last 3 versions']
                 }),
               ],
               sourceMap: false

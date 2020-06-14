@@ -1,0 +1,14 @@
+mixin sidebar
+    aside.sidebar
+        button(type="button").sidebar-language-button
+            +svg('nav/planet')
+
+        ul.sidebar-books-list
+            li.sidebar-books-list-item
+                a(href="").sidebar-books-list-item__link.sidebar-books-list-item__link--first_part
+                    include ./icons/insomvita-part-one.pug
+            li.sidebar-books-list-item--second_part
+                a(href="").sidebar-books-list-item__link.sidebar-books-list-item__link--second_part
+                    include ./icons/insomvita-part-two.pug
+
+        block

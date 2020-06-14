@@ -1,0 +1,12 @@
+extends ./../layouts/base.pug
+
+block left-section
+    +mainImageWithGradient('owner-portret.jpg')
+
+block right-section
+    include ./../layouts/sidebar/main.pug
+    include ./../layouts/nav/short.pug
+    div.section-element-content--center.index-content
+        +title('Олександр <span class="index-content-title--fwNormal">Дан</span>', 'index-content-title')
+        img.index-content-logo(src= require('images/insomvita-logo-text-white.jpg'), alt="text-logo-book")
+        p.index-content-text психологiчний трилер з елементами детективу

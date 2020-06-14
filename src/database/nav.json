@@ -1,7 +1,0 @@
-{
-  "data": [
-    { "link": "/", "text": "main" },
-    { "link": "/about", "text": "about" },
-    { "link": "/lol", "text": "lol" }
-  ]
-}
