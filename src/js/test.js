@@ -1,1 +1,0 @@
-export default () => document.querySelector('.nav').innerHTML = require('./../templates/elements/nav.pug')();

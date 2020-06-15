@@ -4,26 +4,24 @@ const PAGES = {
   'INDEX': {
     name: 'index'
   },
-  'INDEX2': {
-    name: 'index2'
+  'ME': {
+    name: 'me'
   }
 };
 
 export default {
   root: resolve(__dirname, '../', '../'),
   outputPath: resolve(__dirname, '../', '../', 'public'),
-  // entryPath: [
-  //   resolve(__dirname, '../', '../', 'src/app.js'),
-  //   resolve(__dirname, '../', '../', 'src/app.sass'),
-  // ],
-  entryPath: {
-    index: resolve(__dirname, '../', '../', 'src', 'js', 'pages', `${PAGES.INDEX.name}.js`),
-    index2: resolve(__dirname, '../', '../', 'src', 'js', 'pages', `${PAGES.INDEX2.name}.js`),
-  },
+  entryPath: Object.values(PAGES).reduce((results, { name }) => {
+    return Object.assign(
+      results,
+      { [name]: resolve(__dirname, '../', '../', 'src', 'js', 'pages', `${name}.js`) }
+    );
+  }, { 'common': resolve(__dirname, '../', '../', 'src', 'style', 'common.sass') }),
   templatePaths: Object.values(PAGES).map(({ name }) => ({
     filename: `${name}.html`,
     template: resolve(__dirname, '../../', 'src', 'templates', 'pages', `${name}.pug`),
-    chunks: ['vendor', name]
+    chunks: ['vendor', 'common', name]
   })),
   imagesFolder: 'images',
   fontsFolder: 'fonts',

@@ -94,3 +94,8 @@ Thumbs.db
 !.gitignore
 !.editorconfig
 !.phpcs.xml.dist
+
+src
+package.json
+package-lock.json
+config

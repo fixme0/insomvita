@@ -1,0 +1,12 @@
+extends ./../layouts/base.pug
+
+block left-section
+    +mainImageWithGradient('owner-portret.jpg')
+
+block right-section
+    include ./../layouts/sidebar/me.pug
+    include ./../layouts/nav/short.pug
+    div.section-element-content--center.me-content
+        +title('Олександр Дан', 'me-content-title')
+        include ./../elements/textList.pug
+

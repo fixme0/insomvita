@@ -10,7 +10,7 @@ export const getStyleRules = (mode) => {
   switch (mode) {
     case 'development': {
       return {
-        test: /\.sass$/,
+        test: /\.sass|css$/,
         use: [
           { loader: 'style-loader', options: { sourceMap: true, hmr: true } },
           { loader: 'css-loader', options: { sourceMap: true } },
