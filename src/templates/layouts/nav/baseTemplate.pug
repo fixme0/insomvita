@@ -1,7 +1,0 @@
-mixin nav(list)
-    nav.nav
-        ul.nav-list
-            each navItem in list
-                li.nav-list-item
-                    a(href= navItem.link).nav-list-item-link
-                        +svg(navItem.img.slice(0, -4))
