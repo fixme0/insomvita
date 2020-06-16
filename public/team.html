@@ -5,11 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-  <link href="common.css" rel="stylesheet"><link href="index.css" rel="stylesheet"></head>
+  <link href="common.css" rel="stylesheet"><link href="team.css" rel="stylesheet"></head>
   <body>
     <div class="wrapper wrapper-theme--dark">
-      <section class="section section--left">
-        <div class="image-gradient"><img class="image-gradient-element" src="images/owner-portret.jpg" alt="owner-portret.jpg"></div>
+      <section class="section section--left"><a class="team-backButton button--icon button--dark button-back" href="/book.html">
+                  <svg>
+                    <use xlink:href="sprite.svg#back"></use>
+                  </svg></a>
+        <div class="image-gradient"><img class="image-gradient-element" src="images/team.jpg" alt="team.jpg"></div>
+        <div class="sub-nav">
+          <ul class="sub-nav-list">
+            <li class="sub-nav-list-item"><a class="sub-nav-list-item__link" href="">
+                <svg>
+                  <use xlink:href="sprite.svg#read"></use>
+                </svg></a></li>
+            <li class="sub-nav-list-item"><a class="sub-nav-list-item__link" href="">
+                <svg>
+                  <use xlink:href="sprite.svg#listen"></use>
+                </svg></a></li>
+          </ul>
+          <ul class="sub-nav-list">
+            <li class="sub-nav-list-item"><a class="sub-nav-list-item__link" href="">
+                <svg>
+                  <use xlink:href="sprite.svg#video"></use>
+                </svg></a></li>
+            <li class="sub-nav-list-item"><a class="sub-nav-list-item__link" href="">
+                <svg>
+                  <use xlink:href="sprite.svg#buy"></use>
+                </svg></a></li>
+          </ul>
+        </div>
       </section>
       <section class="section section--right">
                 <aside class="sidebar">
@@ -57,10 +82,23 @@
 </defs>
 </svg></a></li>
 </ul>
-                  <footer class="footer"><a class="footer-copyright-icon" href="">
-                      <svg>
-                        <use xlink:href="sprite.svg#copywrite"></use>
-                      </svg></a>
+                  <!-- you can use "active" class at li elements in sidebar-socials-list-->
+                  <ul class="sidebar-socials-list">
+                    <li class="sidebar-socials-list-item"><a class="sidebar-socials-list-item__link sidebar-socials-list-item__link--undefined" href="/settings.html">
+                        <svg>
+                          <use xlink:href="sprite.svg#settings"></use>
+                        </svg></a></li>
+                    <li class="sidebar-socials-list-item"><a class="sidebar-socials-list-item__link sidebar-socials-list-item__link--undefined" href="/team.html">
+                        <svg>
+                          <use xlink:href="sprite.svg#team"></use>
+                        </svg></a></li>
+                    <li class="sidebar-socials-list-item"><a class="sidebar-socials-list-item__link sidebar-socials-list-item__link--undefined" href="/blog.html">
+                        <svg>
+                          <use xlink:href="sprite.svg#blog"></use>
+                        </svg></a></li>
+                  </ul>
+                  <footer class="footer"><a class="footer-copyright-text" href="">
+                      <Copyright>© 2020 Oleksandr Danaikanych. All rights reserved.</Copyright></a>
                   </footer>
                 </aside>
                 <nav class="nav">
@@ -73,13 +111,108 @@
                         <svg>
                           <use xlink:href="sprite.svg#author"></use>
                         </svg></a></li>
+                    <li class="nav-list-item"><a class="nav-list-item-link" href="/book.html">
+                        <svg>
+                          <use xlink:href="sprite.svg#about"></use>
+                        </svg></a></li>
+                    <li class="nav-list-item"><a class="nav-list-item-link" href="/reviews.html">
+                        <svg>
+                          <use xlink:href="sprite.svg#review"></use>
+                        </svg></a></li>
+                    <li class="nav-list-item"><a class="nav-list-item-link" href="">
+                        <svg>
+                          <use xlink:href="sprite.svg#recommended"></use>
+                        </svg></a></li>
+                    <li class="nav-list-item"><a class="nav-list-item-link" href="">
+                        <svg>
+                          <use xlink:href="sprite.svg#shop"></use>
+                        </svg></a></li>
                   </ul>
                 </nav>
-        <div class="section-element-content--center index-content">
-          <h1 class="title index-content-title">Олександр <span class="index-content-title--fwNormal">Дан</span></h1><img class="index-content-logo" src="images/insomvita-logo-text-white.jpg" alt="text-logo-book">
-          <p class="index-content-text">психологiчний трилер з елементами детективу</p>
+        <div class="section-element-content--center team-content">
+          <h2 class="subTitle team-content__title">Команда</h2>
+          <div class="team-content-list simplebar-horizontal-only simplebar-position-left">
+            <article class="team-content-list-item"><img class="team-content-list-item__ava" src="images/avatar.jpg" alt="avatar">
+              <div class="team-content-list-item-body">
+                <div class="team-content-list-item-body-author">
+                  <div class="team-content-list-item-body-author-info">
+                    <p class="team-content-list-item-body-author-info__name">Шиндер Дарья</p>
+                    <p class="team-content-list-item-body-author-info__job">Дизайнер сайта</p>
+                  </div>
+                  <ul class="team-content-list-item-body-author-social-list">
+                    <li class="team-content-list-item-body-author-social-list-item"><a class="team-content-list-item-body-author-social-list-item__link button--icon button--dark">
+                        <svg>
+                          <use xlink:href="sprite.svg#instagram"></use>
+                        </svg></a>
+                    </li>
+                    <li class="team-content-list-item-body-author-social-list-item"><a class="team-content-list-item-body-author-social-list-item__link button--icon button--dark">
+                        <svg>
+                          <use xlink:href="sprite.svg#facebook"></use>
+                        </svg></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="team-content-list-item-body__text text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві склав на ній підбірку зразків шрифтівLorem Ipsum Lorem Ipsum - це текст-"риба", що використовується в друкарстві склав на ній підбірку зразків шрифтівLorem Ipsum</div><a class="team-content-list-item-body__toggler button--icon button--dark button-back" href="">
+                          <svg>
+                            <use xlink:href="sprite.svg#back"></use>
+                          </svg></a>
+              </div>
+            </article>
+            <article class="team-content-list-item"><img class="team-content-list-item__ava" src="images/avatar.jpg" alt="avatar">
+              <div class="team-content-list-item-body">
+                <div class="team-content-list-item-body-author">
+                  <div class="team-content-list-item-body-author-info">
+                    <p class="team-content-list-item-body-author-info__name">Шиндер Дарья</p>
+                    <p class="team-content-list-item-body-author-info__job">Дизайнер сайта</p>
+                  </div>
+                  <ul class="team-content-list-item-body-author-social-list">
+                    <li class="team-content-list-item-body-author-social-list-item"><a class="team-content-list-item-body-author-social-list-item__link button--icon button--dark">
+                        <svg>
+                          <use xlink:href="sprite.svg#instagram"></use>
+                        </svg></a>
+                    </li>
+                    <li class="team-content-list-item-body-author-social-list-item"><a class="team-content-list-item-body-author-social-list-item__link button--icon button--dark">
+                        <svg>
+                          <use xlink:href="sprite.svg#facebook"></use>
+                        </svg></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="team-content-list-item-body__text text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві склав на ній підбірку зразків шрифтівLorem Ipsum Lorem Ipsum - це текст-"риба", що використовується в друкарстві склав на ній підбірку зразків шрифтівLorem Ipsum</div><a class="team-content-list-item-body__toggler button--icon button--dark button-back" href="">
+                          <svg>
+                            <use xlink:href="sprite.svg#back"></use>
+                          </svg></a>
+              </div>
+            </article>
+            <article class="team-content-list-item"><img class="team-content-list-item__ava" src="images/avatar.jpg" alt="avatar">
+              <div class="team-content-list-item-body">
+                <div class="team-content-list-item-body-author">
+                  <div class="team-content-list-item-body-author-info">
+                    <p class="team-content-list-item-body-author-info__name">Шиндер Дарья</p>
+                    <p class="team-content-list-item-body-author-info__job">Дизайнер сайта</p>
+                  </div>
+                  <ul class="team-content-list-item-body-author-social-list">
+                    <li class="team-content-list-item-body-author-social-list-item"><a class="team-content-list-item-body-author-social-list-item__link button--icon button--dark">
+                        <svg>
+                          <use xlink:href="sprite.svg#instagram"></use>
+                        </svg></a>
+                    </li>
+                    <li class="team-content-list-item-body-author-social-list-item"><a class="team-content-list-item-body-author-social-list-item__link button--icon button--dark">
+                        <svg>
+                          <use xlink:href="sprite.svg#facebook"></use>
+                        </svg></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="team-content-list-item-body__text text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві склав на ній підбірку зразків шрифтівLorem Ipsum Lorem Ipsum - це текст-"риба", що використовується в друкарстві склав на ній підбірку зразків шрифтівLorem Ipsum</div><a class="team-content-list-item-body__toggler button--icon button--dark button-back" href="">
+                          <svg>
+                            <use xlink:href="sprite.svg#back"></use>
+                          </svg></a>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
     </div>
-  <script type="text/javascript" src="common.js"></script><script type="text/javascript" src="index.js"></script><script type="text/javascript" src="vendor.js"></script></body>
+  <script type="text/javascript" src="common.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="team.js"></script></body>
 </html>
