@@ -21,23 +21,31 @@
             <div class="reviews-form-control-offset control--error control">
               <input class="control__element control__element--input" type="text"><span class="control__error">Your error message</span>
             </div>
+            <div class="reviews-form-social-container reviews-form-control-offset">
+              <div class="reviews-form-social-container__control control--error control">
+                <input class="control__element control__element--input" type="text"><span class="control__error">Your error message</span>
+              </div>
+              <div class="reviews-form-social-container__control control--error control">
+                <input class="control__element control__element--input" type="text"><span class="control__error">Your error message</span>
+              </div>
+            </div>
             <div class="reviews-form-container">
               <div class="reviews-form-sex error">
                 <label class="reviews-form-sex-button button--icon">
                   <input class="reviews-form-sex-button__control" type="radio">
                   <svg>
-                    <use xlink:href="sprite.svg#home"></use>
+                    <use xlink:href="sprite.svg#female"></use>
                   </svg>
                 </label>
                 <label class="reviews-form-sex-button button--icon">
                   <input class="reviews-form-sex-button__control" type="radio">
                   <svg>
-                    <use xlink:href="sprite.svg#home"></use>
+                    <use xlink:href="sprite.svg#male"></use>
                   </svg>
                 </label><span class="control__error reviews-form-sex__error">Your error message</span>
               </div>
               <div class="reviews-form-likes error">
-                <ul class="likes reviews-content-list-item-likes-list">
+                <ul class="likes reviews-form-likes">
                   <li class="likes-item"><a class="likes-item__link" href="#">
                       <svg>
                         <use xlink:href="sprite.svg#like"></use>
@@ -58,12 +66,13 @@
                       <svg>
                         <use xlink:href="sprite.svg#like"></use>
                       </svg></a></li>
-                </ul><span class="control__error reviews-form-likes__error">Your error message</span>
+                </ul>
+                <input class="reviews-form-likes__control" type="hidden" value="0"><span class="control__error reviews-form-likes__error">Your error message</span>
               </div>
             </div>
             <div class="reviews-form__textarea control--error control">
-              <textarea class="control__element control__element--textarea"></textarea>
-              <p class="reviews-form__symbolsCounter">0/1500</p><span class="control__error">Your error message</span>
+              <textarea class="control__element control__element--textarea" data-counter="" data-limit-value="1500"></textarea>
+              <p class="reviews-form__symbolsCounter"><span data-counter-view>0</span>/1500</p><span class="control__error">Your error message</span>
             </div>
             <button class="reviews-form__submitBtn button button--icon button--ok">ok</button>
           </form>
@@ -98,7 +107,7 @@
                         <svg>
                           <use xlink:href="sprite.svg#review"></use>
                         </svg></a></li>
-                    <li class="nav-list-item"><a class="nav-list-item-link" href="">
+                    <li class="nav-list-item"><a class="nav-list-item-link" href="/recommend.html">
                         <svg>
                           <use xlink:href="sprite.svg#recommended"></use>
                         </svg></a></li>
@@ -135,7 +144,7 @@
                         <use xlink:href="sprite.svg#like"></use>
                       </svg></a></li>
                 </ul>
-                <p class="reviews-content-list-item__text text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. </p><a class="reviews-content-list-item__toggler button--icon button--dark button-back" href="">
+                <p class="reviews-content-list-item__text text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. </p><a class="button--toggler reviews-content-list-item__toggler button--icon button--dark button-back" href="">
                   <svg>
                     <use xlink:href="sprite.svg#back"></use>
                   </svg></a>
@@ -166,7 +175,7 @@
                         <use xlink:href="sprite.svg#like"></use>
                       </svg></a></li>
                 </ul>
-                <p class="reviews-content-list-item__text text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. </p><a class="reviews-content-list-item__toggler button--icon button--dark button-back" href="">
+                <p class="reviews-content-list-item__text text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. </p><a class="button--toggler reviews-content-list-item__toggler button--icon button--dark button-back" href="">
                   <svg>
                     <use xlink:href="sprite.svg#back"></use>
                   </svg></a>
@@ -197,7 +206,7 @@
                         <use xlink:href="sprite.svg#like"></use>
                       </svg></a></li>
                 </ul>
-                <p class="reviews-content-list-item__text text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. </p><a class="reviews-content-list-item__toggler button--icon button--dark button-back" href="">
+                <p class="reviews-content-list-item__text text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. </p><a class="button--toggler reviews-content-list-item__toggler button--icon button--dark button-back" href="">
                   <svg>
                     <use xlink:href="sprite.svg#back"></use>
                   </svg></a>
@@ -206,6 +215,13 @@
           </div>
         </div>
       </section>
+      <!-- can be able to add visibled class-->
+            <div class="review-created thanks">
+              <h4 class="review-created__title">ДЯКУЄМО! ВИ НЕЙМОВІРНІ!</h4>
+              <svg>
+                <use xlink:href="sprite.svg#like"></use>
+              </svg>
+            </div>
     </div>
   <script type="text/javascript" src="common.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="reviews.js"></script></body>
 </html>
