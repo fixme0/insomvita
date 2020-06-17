@@ -133,7 +133,8 @@
                     </nav>
           <div class="store-controls">
             <div class="store-controls-element store-controls-element--cities select">
-              <select class="select-control" id="select-cities-control--js" value="1">
+              <select class="select-control" id="select-cities-control--js">
+                <option value="*">Все</option>
                 <option value="1">Kiev</option>
                 <option value="2">Poltava</option>
               </select>
@@ -143,6 +144,7 @@
             </div>
             <div class="store-controls-element store-controls-element--stores select">
               <select class="select-control" id="select-stores-control--js">
+                <option value="*" data-cityID="*">Все</option>
                 <option value="1" data-cityID="1">Test-1</option>
                 <option value="2" data-cityID="1">Test-2</option>
                 <option value="3" data-cityID="2">Test-3</option>
@@ -153,8 +155,8 @@
               </svg>
             </div>
           </div>
-          <h3 class="store-picked-element store-picked-city--js">Киев</h3>
-          <h3 class="store-picked-element store-picked-store--js">Мережа магазинiв “Книгарня Є”</h3>
+          <h3 class="store-picked-element store-picked-city--js hidden"></h3>
+          <h3 class="store-picked-element store-picked-store--js hidden"></h3>
           <div class="store-list--scrollbar simplebar-horizontal-only simplebar-position-left">
             <div class="store-list">
               <article class="store-list-item" data-cityid="1" data-storeid="2"><a class="store-list-item__link" href="">вул. Лисенко 3</a>
