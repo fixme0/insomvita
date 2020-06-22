@@ -82,10 +82,15 @@
                     </li>
                   </ul>
                 </nav>
-        <div class="media-video media-video--js">
-          <video class="video-js" data-setup="{&quot;controls&quot;:true,&quot;poster&quot;:&quot;&quot;,&quot;fluid&quot;:true,&quot;sources&quot;:[{&quot;src&quot;:&quot;http://techslides.com/demos/sample-videos/small.webm&quot;,&quot;type&quot;:&quot;video/mp4&quot;}]}"></video>
+        <div class="media-video">
+          <!-- enable props-->
+          <!-- 1. file-->
+          <!-- 2. poster-->
+          <!-- 3. autoplay-->
+          <div id="player" data-player-setup="{&quot;file&quot;:&quot;http://techslides.com/demos/sample-videos/small.webm&quot;}"></div>
         </div>
       </section>
     </div>
+    <script src="/static/playerJS.js"></script>
   <script type="text/javascript" src="common.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="media.js"></script></body>
 </html>
