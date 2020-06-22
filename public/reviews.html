@@ -13,20 +13,20 @@
           <h3 class="reviews__title">залиште  вiдгук</h3>
           <form class="reviews-form">
             <div class="reviews-form-control-offset control--error control">
-              <input class="control__element control__element--input" type="text"><span class="control__error">Your error message</span>
+              <input class="control__element control__element--input" type="text" placeholder="Имя"><span class="control__error">Your error message</span>
             </div>
             <div class="reviews-form-control-offset control--error control">
-              <input class="control__element control__element--input" type="text"><span class="control__error">Your error message</span>
+              <input class="control__element control__element--input" type="text" placeholder="Фамилия"><span class="control__error">Your error message</span>
             </div>
             <div class="reviews-form-control-offset control--error control">
-              <input class="control__element control__element--input" type="text"><span class="control__error">Your error message</span>
+              <input class="control__element control__element--input" type="text" placeholder="E-mail"><span class="control__error">Your error message</span>
             </div>
             <div class="reviews-form-social-container reviews-form-control-offset">
               <div class="reviews-form-social-container__control control--error control">
-                <input class="control__element control__element--input" type="text"><span class="control__error">Your error message</span>
+                <input class="control__element control__element--input" type="text" placeholder="Instagram"><span class="control__error">Your error message</span>
               </div>
               <div class="reviews-form-social-container__control control--error control">
-                <input class="control__element control__element--input" type="text"><span class="control__error">Your error message</span>
+                <input class="control__element control__element--input" type="text" placeholder="Facebook"><span class="control__error">Your error message</span>
               </div>
             </div>
             <div class="reviews-form-container">
@@ -42,8 +42,8 @@
                   <svg>
                     <use xlink:href="sprite.svg#male"></use>
                   </svg>
-                </label><span class="control__error reviews-form-sex__error">Your error message</span>
-              </div>
+                </label>
+              </div><span class="control__error reviews-form-sex__error">Your error message</span>
               <div class="reviews-form-likes error">
                 <ul class="likes reviews-form-likes">
                   <li class="likes-item"><a class="likes-item__link" href="#">
@@ -67,61 +67,67 @@
                         <use xlink:href="sprite.svg#like"></use>
                       </svg></a></li>
                 </ul>
-                <input class="reviews-form-likes__control" type="hidden" value="0"><span class="control__error reviews-form-likes__error">Your error message</span>
-              </div>
+                <input class="reviews-form-likes__control" type="hidden" value="0">
+              </div><span class="control__error reviews-form-likes__error">Your error message</span>
             </div>
-            <div class="reviews-form__textarea control--error control">
-              <textarea class="control__element control__element--textarea" data-counter="" data-limit-value="1500"></textarea>
-              <p class="reviews-form__symbolsCounter"><span data-counter-view>0</span>/1500</p><span class="control__error">Your error message</span>
+            <div class="reviews-form__textarea  control">
+              <textarea class="control__element control__element--textarea" data-counter="" data-limit-value="1500" placeholder="Відгук"></textarea>
             </div>
-            <button class="reviews-form__submitBtn button button--icon button--ok">ok</button>
+            <div class="reviews-form-textarea-content control--error"><span class="control__error">Your error message</span>
+              <p class="reviews-form__symbolsCounter"><span data-counter-view>0</span>/1500</p>
+            </div>
+            <button class="reviews-form__submitBtn button button--icon button--ok" type="button">ok</button>
           </form>
         </div>
       </section>
       <section class="section section--right">
-                <aside class="sidebar">
-                  <button class="sidebar-language-button" type="button">
-                    <svg>
-                      <use xlink:href="sprite.svg#planet"></use>
-                    </svg>
-                  </button>
+                <aside class="sidebar"><a class="sidebar-language-button button--white button--icon" href="">
+                            <svg>
+                              <use xlink:href="sprite.svg#planet"></use>
+                            </svg></a>
                   <footer class="footer"><a class="footer-copyright-text" href="/insomvita/public/certificates.html">
                       <Copyright>© 2020 Oleksandr Danaikanych. All rights reserved.</Copyright></a>
                   </footer>
                 </aside>
                 <nav class="nav">
                   <ul class="nav-list">
-                    <li class="nav-list-item"><a class="nav-list-item-link" href="/insomvita/public">
-                        <svg>
-                          <use xlink:href="sprite.svg#home"></use>
-                        </svg></a></li>
-                    <li class="nav-list-item"><a class="nav-list-item-link" href="/insomvita/public/me.html">
-                        <svg>
-                          <use xlink:href="sprite.svg#author"></use>
-                        </svg></a></li>
-                    <li class="nav-list-item"><a class="nav-list-item-link" href="/insomvita/public/book.html">
-                        <svg>
-                          <use xlink:href="sprite.svg#about"></use>
-                        </svg></a></li>
-                    <li class="nav-list-item"><a class="nav-list-item-link" href="/insomvita/public/reviews.html">
-                        <svg>
-                          <use xlink:href="sprite.svg#review"></use>
-                        </svg></a></li>
-                    <li class="nav-list-item"><a class="nav-list-item-link" href="/insomvita/public/recommend.html">
-                        <svg>
-                          <use xlink:href="sprite.svg#recommended"></use>
-                        </svg></a></li>
-                    <li class="nav-list-item"><a class="nav-list-item-link" href="/insomvita/public/store.html">
-                        <svg>
-                          <use xlink:href="sprite.svg#shop"></use>
-                        </svg></a></li>
+                    <li class="nav-list-item"><a class="nav-list-item-link button--white button--icon" href="/insomvita/public/index.html">
+                                <svg>
+                                  <use xlink:href="sprite.svg#home"></use>
+                                </svg></a>
+                    </li>
+                    <li class="nav-list-item"><a class="nav-list-item-link button--white button--icon" href="/insomvita/public/me.html">
+                                <svg>
+                                  <use xlink:href="sprite.svg#author"></use>
+                                </svg></a>
+                    </li>
+                    <li class="nav-list-item"><a class="nav-list-item-link button--white button--icon" href="/insomvita/public/book.html">
+                                <svg>
+                                  <use xlink:href="sprite.svg#about"></use>
+                                </svg></a>
+                    </li>
+                    <li class="nav-list-item"><a class="nav-list-item-link button--white button--icon" href="/insomvita/public/reviews.html">
+                                <svg>
+                                  <use xlink:href="sprite.svg#review"></use>
+                                </svg></a>
+                    </li>
+                    <li class="nav-list-item"><a class="nav-list-item-link button--white button--icon" href="/insomvita/public/recommend.html">
+                                <svg>
+                                  <use xlink:href="sprite.svg#recommended"></use>
+                                </svg></a>
+                    </li>
+                    <li class="nav-list-item"><a class="nav-list-item-link button--white button--icon" href="/insomvita/public/store.html">
+                                <svg>
+                                  <use xlink:href="sprite.svg#shop"></use>
+                                </svg></a>
+                    </li>
                   </ul>
                 </nav>
-        <div class="section-element-content--center reviews-content">
+        <div class="reviews-content">
           <div class="reviews-content-list simplebar-horizontal-only simplebar-position-left">
             <article class="reviews-content-list-item"><img class="reviews-content-list-item__ava" src="images/avatar.jpg" alt="avatar">
-              <div class="reviews-content-list-item-container">
-                <p class="reviews-content-list-item__author">Иванов Петр</p>
+              <div class="reviews-content-list-item-author">
+                <p class="reviews-content-list-item-author__name">Иванов Петр</p>
                 <ul class="likes reviews-content-list-item-likes-list">
                   <li class="likes-item"><a class="likes-item__link" href="#">
                       <svg>
@@ -144,15 +150,28 @@
                         <use xlink:href="sprite.svg#like"></use>
                       </svg></a></li>
                 </ul>
-                <p class="reviews-content-list-item__text text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. </p><a class="button--toggler reviews-content-list-item__toggler button--icon button--dark button-back" href="">
-                  <svg>
-                    <use xlink:href="sprite.svg#back"></use>
-                  </svg></a>
               </div>
+              <!-- you can add disable class to li-->
+              <ul class="reviews-content-list-item-social">
+                <li class="reviews-content-list-item-social-item disable"><a class="reviews-content-list-item-container-social-item__link button--dark button--icon" href="">
+                            <svg>
+                              <use xlink:href="sprite.svg#instagram"></use>
+                            </svg></a>
+                </li>
+                <li class="reviews-content-list-item-social-item"><a class="reviews-content-list-item-container-social-item__link button--dark button--icon" href="">
+                            <svg>
+                              <use xlink:href="sprite.svg#facebook"></use>
+                            </svg></a>
+                </li>
+              </ul>
+              <p class="reviews-content-list-item__text text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. </p><a class="button--toggler reviews-content-list-item__toggler button--dark button--icon" href="">
+                        <svg>
+                          <use xlink:href="sprite.svg#back"></use>
+                        </svg></a>
             </article>
             <article class="reviews-content-list-item"><img class="reviews-content-list-item__ava" src="images/avatar.jpg" alt="avatar">
-              <div class="reviews-content-list-item-container">
-                <p class="reviews-content-list-item__author">Иванов Петр</p>
+              <div class="reviews-content-list-item-author">
+                <p class="reviews-content-list-item-author__name">Иванов Петр</p>
                 <ul class="likes reviews-content-list-item-likes-list">
                   <li class="likes-item"><a class="likes-item__link" href="#">
                       <svg>
@@ -175,15 +194,28 @@
                         <use xlink:href="sprite.svg#like"></use>
                       </svg></a></li>
                 </ul>
-                <p class="reviews-content-list-item__text text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. </p><a class="button--toggler reviews-content-list-item__toggler button--icon button--dark button-back" href="">
-                  <svg>
-                    <use xlink:href="sprite.svg#back"></use>
-                  </svg></a>
               </div>
+              <!-- you can add disable class to li-->
+              <ul class="reviews-content-list-item-social">
+                <li class="reviews-content-list-item-social-item disable"><a class="reviews-content-list-item-container-social-item__link button--dark button--icon" href="">
+                            <svg>
+                              <use xlink:href="sprite.svg#instagram"></use>
+                            </svg></a>
+                </li>
+                <li class="reviews-content-list-item-social-item"><a class="reviews-content-list-item-container-social-item__link button--dark button--icon" href="">
+                            <svg>
+                              <use xlink:href="sprite.svg#facebook"></use>
+                            </svg></a>
+                </li>
+              </ul>
+              <p class="reviews-content-list-item__text text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. </p><a class="button--toggler reviews-content-list-item__toggler button--dark button--icon" href="">
+                        <svg>
+                          <use xlink:href="sprite.svg#back"></use>
+                        </svg></a>
             </article>
             <article class="reviews-content-list-item"><img class="reviews-content-list-item__ava" src="images/avatar.jpg" alt="avatar">
-              <div class="reviews-content-list-item-container">
-                <p class="reviews-content-list-item__author">Иванов Петр</p>
+              <div class="reviews-content-list-item-author">
+                <p class="reviews-content-list-item-author__name">Иванов Петр</p>
                 <ul class="likes reviews-content-list-item-likes-list">
                   <li class="likes-item"><a class="likes-item__link" href="#">
                       <svg>
@@ -206,21 +238,45 @@
                         <use xlink:href="sprite.svg#like"></use>
                       </svg></a></li>
                 </ul>
-                <p class="reviews-content-list-item__text text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. </p><a class="button--toggler reviews-content-list-item__toggler button--icon button--dark button-back" href="">
-                  <svg>
-                    <use xlink:href="sprite.svg#back"></use>
-                  </svg></a>
               </div>
+              <!-- you can add disable class to li-->
+              <ul class="reviews-content-list-item-social">
+                <li class="reviews-content-list-item-social-item disable"><a class="reviews-content-list-item-container-social-item__link button--dark button--icon" href="">
+                            <svg>
+                              <use xlink:href="sprite.svg#instagram"></use>
+                            </svg></a>
+                </li>
+                <li class="reviews-content-list-item-social-item"><a class="reviews-content-list-item-container-social-item__link button--dark button--icon" href="">
+                            <svg>
+                              <use xlink:href="sprite.svg#facebook"></use>
+                            </svg></a>
+                </li>
+              </ul>
+              <p class="reviews-content-list-item__text text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. </p><a class="button--toggler reviews-content-list-item__toggler button--dark button--icon" href="">
+                        <svg>
+                          <use xlink:href="sprite.svg#back"></use>
+                        </svg></a>
             </article>
           </div>
         </div>
       </section>
-      <!-- can be able to add visibled class-->
-            <div class="review-created thanks">
-              <h4 class="review-created__title">ДЯКУЄМО! ВИ НЕЙМОВІРНІ!</h4>
-              <svg>
-                <use xlink:href="sprite.svg#like"></use>
-              </svg>
+      <!-- show this block after success created review-->
+            <!-- if you want to show block add to it class visible-->
+            <div class="review-created review-created--js thanks">
+              <div class="review-created-container">
+                <h4 class="review-created__title">ДЯКУЄМО! ВИ НЕЙМОВІРНІ!</h4>
+                <svg>
+                  <use xlink:href="sprite.svg#like"></use>
+                </svg>
+                <svg>
+                  <use xlink:href="sprite.svg#like"></use>
+                </svg>
+                <svg>
+                  <use xlink:href="sprite.svg#like"></use>
+                </svg>
+              </div>
+              <p class="review-created__text text">Ваш відгук на модерації</p>
+                    <button class="review-created__submit review-created__submit--js button button--icon button--ok" type="button">ok</button>
             </div>
     </div>
   <script type="text/javascript" src="common.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="reviews.js"></script></body>
