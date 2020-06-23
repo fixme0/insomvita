@@ -8,10 +8,17 @@
   <link href="common.css" rel="stylesheet"><link href="reader.css" rel="stylesheet"></head>
   <body>
     <div class="wrapper wrapper-theme--dark">
-      <aside class="sidebar"><a class="sidebar-language-button button--white button--icon" href="">
-          <svg>
-            <use xlink:href="sprite.svg#planet"></use>
-          </svg></a>
+      <aside class="sidebar">
+        <div class="sidebar-language"><a class="sidebar-language-button button--white button--icon" href="">
+            <svg>
+              <use xlink:href="sprite.svg#planet"></use>
+            </svg></a>
+          <ul class="sidebar-language-list">
+            <li class="sidebar-language-list-item"><a class="sidebar-language-list-item__link" href="">укр</a></li>
+            <li class="sidebar-language-list-item"><a class="sidebar-language-list-item__link" href="">рус</a></li>
+            <li class="sidebar-language-list-item"><a class="sidebar-language-list-item__link" href="">eng</a></li>
+          </ul>
+        </div>
         <ul class="reader-control">
           <li class="reader-control-button"><a class="reader-control-button__link reader-control-button-prev--js button--dark button--icon" href="">
               <svg>

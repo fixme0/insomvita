@@ -44,10 +44,17 @@
         </div>
       </section>
       <section class="section section--right">
-                <aside class="sidebar"><a class="sidebar-language-button button--white button--icon" href="">
-                            <svg>
-                              <use xlink:href="sprite.svg#planet"></use>
-                            </svg></a>
+                <aside class="sidebar">
+                  <div class="sidebar-language"><a class="sidebar-language-button button--white button--icon" href="">
+                              <svg>
+                                <use xlink:href="sprite.svg#planet"></use>
+                              </svg></a>
+                    <ul class="sidebar-language-list">
+                      <li class="sidebar-language-list-item"><a class="sidebar-language-list-item__link" href="">укр</a></li>
+                      <li class="sidebar-language-list-item"><a class="sidebar-language-list-item__link" href="">рус</a></li>
+                      <li class="sidebar-language-list-item"><a class="sidebar-language-list-item__link" href="">eng</a></li>
+                    </ul>
+                  </div>
                   <footer class="footer"><a class="footer-copyright-text" href="/insomvita/public/certificates.html">
                       <Copyright>© 2020 Oleksandr Danaikanych. All rights reserved.</Copyright></a>
                   </footer>
@@ -88,43 +95,122 @@
                       </ul>
                     </nav>
           <div class="store-controls">
-            <div class="store-controls-element store-controls-element--cities select">
-              <select class="select-control" id="select-cities-control--js">
-                <option value="*">Все</option>
-                <option value="1">Kiev</option>
-                <option value="2">Poltava</option>
-              </select>
+            <div class="store-controls-element store-controls-element--cities select-cities-control--js select close" data-select-value="*">
+              <div class="select-control  control">
+                <input class="control__element control__element--input" type="text" readonly value="Город: Все" data-value-prefix="Город:">
+              </div>
               <svg>
                 <use xlink:href="sprite.svg#arrow-down"></use>
               </svg>
+              <div class="select-options simplebar-horizontal-only"><span class="select-options__item active" data-select-value="*" data-select-text="Все">Все</span><span class="select-options__item" data-select-value="1" data-select-text="Kiev">Kiev</span><span class="select-options__item" data-select-value="2" data-select-text="Poltava">Poltava</span>
+              </div>
             </div>
-            <div class="store-controls-element store-controls-element--stores select">
-              <select class="select-control" id="select-stores-control--js">
-                <option value="*" data-cityID="*">Все</option>
-                <option value="1" data-cityID="1">Test-1</option>
-                <option value="2" data-cityID="1">Test-2</option>
-                <option value="3" data-cityID="2">Test-3</option>
-                <option value="4" data-cityID="2">Test-4</option>
-              </select>
+            <div class="store-controls-element store-controls-element--stores select-stores-control--js select close" data-select-value="*">
+              <div class="select-control  control">
+                <input class="control__element control__element--input" type="text" readonly value="Сеть: Все" data-value-prefix="Сеть:">
+              </div>
               <svg>
                 <use xlink:href="sprite.svg#arrow-down"></use>
               </svg>
+              <div class="select-options simplebar-horizontal-only"><span class="select-options__item active" data-select-value="*" data-select-text="Все" data-city-id="*">Все</span><span class="select-options__item" data-select-value="1" data-select-text="Some store name" data-city-id="1">Some store name</span><span class="select-options__item" data-select-value="2" data-select-text="Some store name 2" data-city-id="1">Some store name 2</span><span class="select-options__item" data-select-value="3" data-select-text="Some store name 3" data-city-id="1">Some store name 3</span><span class="select-options__item" data-select-value="4" data-select-text="Some store name 4" data-city-id="2">Some store name 4</span><span class="select-options__item" data-select-value="5" data-select-text="Some store name 5" data-city-id="2">Some store name 5</span><span class="select-options__item" data-select-value="6" data-select-text="Some store name 6" data-city-id="2">Some store name 6</span>
+              </div>
             </div>
           </div>
-          <h3 class="store-picked-element store-picked-city--js hidden"></h3>
-          <h3 class="store-picked-element store-picked-store--js hidden"></h3>
-          <div class="store-list--scrollbar simplebar-horizontal-only simplebar-position-left">
-            <div class="store-list">
-              <article class="store-list-item" data-cityid="1" data-storeid="2"><a class="store-list-item__link" href="">вул. Лисенко 3</a>
-                <p class="store-list-item__text">з 9:00 - 18:00, без выхiдних</p><a class="store-list-item__text store-list-item__text--phone" href="tel:+380448767698">( 044 ) 876 76 98</a>
-              </article>
-              <article class="store-list-item" data-cityid="2" data-storeid="4"><a class="store-list-item__link" href="">вул. Лисенко 3</a>
-                <p class="store-list-item__text">з 9:00 - 18:00, без выхiдних</p><a class="store-list-item__text store-list-item__text--phone" href="tel:+380448767698">( 044 ) 876 76 98</a>
-              </article>
-              <article class="store-list-item" data-cityid="1" data-storeid="1"><a class="store-list-item__link" href="">вул. Лисенко 3</a>
-                <p class="store-list-item__text">з 9:00 - 18:00, без выхiдних</p><a class="store-list-item__text store-list-item__text--phone" href="tel:+380448767698">( 044 ) 876 76 98</a>
-              </article>
-            </div>
+          <div class="store-city-list store-city-list--js simplebar-horizontal-only simplebar-position-left">
+            <article class="store-city-list-item" data-city-id="1" data-stores-ids="[1,2,3]">
+              <h3 class="store-city-list-item__name">Kiev</h3>
+              <ul class="store-stores-list">
+                <li class="store-stores-list-item" data-store-id="1">
+                  <h3 class="store-stores-list-item__name">Some store name</h3>
+                  <ul class="store-stores-list-item-shop-list">
+                    <li class="store-stores-list-item-shop-list-item"><a class="store-stores-list-item-shop-list-item__link" href="">вул. Лисенко 3</a>
+                      <p class="store-stores-list-item-shop-list-item__text">з 9:00 - 18:00, без выхiдних</p><a class="store-stores-list-item-shop-list-item__text store-stores-list-item-shop-list-item__text--phone" href="tel:+380448767698">( 044 ) 876 76 98</a>
+                    </li>
+                    <li class="store-stores-list-item-shop-list-item"><a class="store-stores-list-item-shop-list-item__link" href="">вул. Лисенко 3</a>
+                      <p class="store-stores-list-item-shop-list-item__text">з 9:00 - 18:00, без выхiдних</p><a class="store-stores-list-item-shop-list-item__text store-stores-list-item-shop-list-item__text--phone" href="tel:+380448767698">( 044 ) 876 76 98</a>
+                    </li>
+                    <li class="store-stores-list-item-shop-list-item"><a class="store-stores-list-item-shop-list-item__link" href="">вул. Лисенко 3</a>
+                      <p class="store-stores-list-item-shop-list-item__text">з 9:00 - 18:00, без выхiдних</p><a class="store-stores-list-item-shop-list-item__text store-stores-list-item-shop-list-item__text--phone" href="tel:+380448767698">( 044 ) 876 76 98</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="store-stores-list-item" data-store-id="2">
+                  <h3 class="store-stores-list-item__name">Some store name 2</h3>
+                  <ul class="store-stores-list-item-shop-list">
+                    <li class="store-stores-list-item-shop-list-item"><a class="store-stores-list-item-shop-list-item__link" href="">вул. Лисенко 3</a>
+                      <p class="store-stores-list-item-shop-list-item__text">з 9:00 - 18:00, без выхiдних</p><a class="store-stores-list-item-shop-list-item__text store-stores-list-item-shop-list-item__text--phone" href="tel:+380448767698">( 044 ) 876 76 98</a>
+                    </li>
+                    <li class="store-stores-list-item-shop-list-item"><a class="store-stores-list-item-shop-list-item__link" href="">вул. Лисенко 3</a>
+                      <p class="store-stores-list-item-shop-list-item__text">з 9:00 - 18:00, без выхiдних</p><a class="store-stores-list-item-shop-list-item__text store-stores-list-item-shop-list-item__text--phone" href="tel:+380448767698">( 044 ) 876 76 98</a>
+                    </li>
+                    <li class="store-stores-list-item-shop-list-item"><a class="store-stores-list-item-shop-list-item__link" href="">вул. Лисенко 3</a>
+                      <p class="store-stores-list-item-shop-list-item__text">з 9:00 - 18:00, без выхiдних</p><a class="store-stores-list-item-shop-list-item__text store-stores-list-item-shop-list-item__text--phone" href="tel:+380448767698">( 044 ) 876 76 98</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="store-stores-list-item" data-store-id="3">
+                  <h3 class="store-stores-list-item__name">Some store name 3</h3>
+                  <ul class="store-stores-list-item-shop-list">
+                    <li class="store-stores-list-item-shop-list-item"><a class="store-stores-list-item-shop-list-item__link" href="">вул. Лисенко 3</a>
+                      <p class="store-stores-list-item-shop-list-item__text">з 9:00 - 18:00, без выхiдних</p><a class="store-stores-list-item-shop-list-item__text store-stores-list-item-shop-list-item__text--phone" href="tel:+380448767698">( 044 ) 876 76 98</a>
+                    </li>
+                    <li class="store-stores-list-item-shop-list-item"><a class="store-stores-list-item-shop-list-item__link" href="">вул. Лисенко 3</a>
+                      <p class="store-stores-list-item-shop-list-item__text">з 9:00 - 18:00, без выхiдних</p><a class="store-stores-list-item-shop-list-item__text store-stores-list-item-shop-list-item__text--phone" href="tel:+380448767698">( 044 ) 876 76 98</a>
+                    </li>
+                    <li class="store-stores-list-item-shop-list-item"><a class="store-stores-list-item-shop-list-item__link" href="">вул. Лисенко 3</a>
+                      <p class="store-stores-list-item-shop-list-item__text">з 9:00 - 18:00, без выхiдних</p><a class="store-stores-list-item-shop-list-item__text store-stores-list-item-shop-list-item__text--phone" href="tel:+380448767698">( 044 ) 876 76 98</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </article>
+            <article class="store-city-list-item" data-city-id="2" data-stores-ids="[4,5,6]">
+              <h3 class="store-city-list-item__name">Poltava</h3>
+              <ul class="store-stores-list">
+                <li class="store-stores-list-item" data-store-id="4">
+                  <h3 class="store-stores-list-item__name">Some store name 4</h3>
+                  <ul class="store-stores-list-item-shop-list">
+                    <li class="store-stores-list-item-shop-list-item"><a class="store-stores-list-item-shop-list-item__link" href="">вул. Лисенко 3</a>
+                      <p class="store-stores-list-item-shop-list-item__text">з 9:00 - 18:00, без выхiдних</p><a class="store-stores-list-item-shop-list-item__text store-stores-list-item-shop-list-item__text--phone" href="tel:+380448767698">( 044 ) 876 76 98</a>
+                    </li>
+                    <li class="store-stores-list-item-shop-list-item"><a class="store-stores-list-item-shop-list-item__link" href="">вул. Лисенко 3</a>
+                      <p class="store-stores-list-item-shop-list-item__text">з 9:00 - 18:00, без выхiдних</p><a class="store-stores-list-item-shop-list-item__text store-stores-list-item-shop-list-item__text--phone" href="tel:+380448767698">( 044 ) 876 76 98</a>
+                    </li>
+                    <li class="store-stores-list-item-shop-list-item"><a class="store-stores-list-item-shop-list-item__link" href="">вул. Лисенко 3</a>
+                      <p class="store-stores-list-item-shop-list-item__text">з 9:00 - 18:00, без выхiдних</p><a class="store-stores-list-item-shop-list-item__text store-stores-list-item-shop-list-item__text--phone" href="tel:+380448767698">( 044 ) 876 76 98</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="store-stores-list-item" data-store-id="5">
+                  <h3 class="store-stores-list-item__name">Some store name 5</h3>
+                  <ul class="store-stores-list-item-shop-list">
+                    <li class="store-stores-list-item-shop-list-item"><a class="store-stores-list-item-shop-list-item__link" href="">вул. Лисенко 3</a>
+                      <p class="store-stores-list-item-shop-list-item__text">з 9:00 - 18:00, без выхiдних</p><a class="store-stores-list-item-shop-list-item__text store-stores-list-item-shop-list-item__text--phone" href="tel:+380448767698">( 044 ) 876 76 98</a>
+                    </li>
+                    <li class="store-stores-list-item-shop-list-item"><a class="store-stores-list-item-shop-list-item__link" href="">вул. Лисенко 3</a>
+                      <p class="store-stores-list-item-shop-list-item__text">з 9:00 - 18:00, без выхiдних</p><a class="store-stores-list-item-shop-list-item__text store-stores-list-item-shop-list-item__text--phone" href="tel:+380448767698">( 044 ) 876 76 98</a>
+                    </li>
+                    <li class="store-stores-list-item-shop-list-item"><a class="store-stores-list-item-shop-list-item__link" href="">вул. Лисенко 3</a>
+                      <p class="store-stores-list-item-shop-list-item__text">з 9:00 - 18:00, без выхiдних</p><a class="store-stores-list-item-shop-list-item__text store-stores-list-item-shop-list-item__text--phone" href="tel:+380448767698">( 044 ) 876 76 98</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="store-stores-list-item" data-store-id="6">
+                  <h3 class="store-stores-list-item__name">Some store name 6</h3>
+                  <ul class="store-stores-list-item-shop-list">
+                    <li class="store-stores-list-item-shop-list-item"><a class="store-stores-list-item-shop-list-item__link" href="">вул. Лисенко 3</a>
+                      <p class="store-stores-list-item-shop-list-item__text">з 9:00 - 18:00, без выхiдних</p><a class="store-stores-list-item-shop-list-item__text store-stores-list-item-shop-list-item__text--phone" href="tel:+380448767698">( 044 ) 876 76 98</a>
+                    </li>
+                    <li class="store-stores-list-item-shop-list-item"><a class="store-stores-list-item-shop-list-item__link" href="">вул. Лисенко 3</a>
+                      <p class="store-stores-list-item-shop-list-item__text">з 9:00 - 18:00, без выхiдних</p><a class="store-stores-list-item-shop-list-item__text store-stores-list-item-shop-list-item__text--phone" href="tel:+380448767698">( 044 ) 876 76 98</a>
+                    </li>
+                    <li class="store-stores-list-item-shop-list-item"><a class="store-stores-list-item-shop-list-item__link" href="">вул. Лисенко 3</a>
+                      <p class="store-stores-list-item-shop-list-item__text">з 9:00 - 18:00, без выхiдних</p><a class="store-stores-list-item-shop-list-item__text store-stores-list-item-shop-list-item__text--phone" href="tel:+380448767698">( 044 ) 876 76 98</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </article>
           </div>
         </div>
       </section>
