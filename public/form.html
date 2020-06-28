@@ -2,59 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0;">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-  <link href="common.style.css" rel="stylesheet"><link href="media.css" rel="stylesheet"></head>
+  <link href="common.style.css" rel="stylesheet"><link href="form.css" rel="stylesheet"></head>
   <body>
     <div class="wrapper wrapper-theme--dark">
-            <aside class="sidebar">
-              <div class="sidebar-language"><a class="sidebar-language-button sidebar-language-button--js button--white button--icon" href="">
-                        <svg>
-                          <use xlink:href="sprite.svg#planet"></use>
-                        </svg></a>
-                <ul class="sidebar-language-list">
-                  <li class="sidebar-language-list-item"><a class="sidebar-language-list-item__link" href="">укр</a></li>
-                  <li class="sidebar-language-list-item"><a class="sidebar-language-list-item__link" href="">рус</a></li>
-                  <li class="sidebar-language-list-item"><a class="sidebar-language-list-item__link" href="">eng</a></li>
-                </ul>
-              </div>
-              <footer class="footer"><a class="footer-copyright-text" href="/insomvita/public/certificates.html">
-                  <Copyright>© 2020 Oleksandr Danaikanych. All rights reserved.</Copyright></a>
-              </footer>
-            </aside>
-            <aside class="media-sub-nav">
-              <ul class="media-sub-nav-list">
-                <li class="media-sub-nav-list-item"><a class="media-sub-nav-list-item__link button--dark section-backButton button--dark button--icon" href="">
-                                <svg>
-                                  <use xlink:href="sprite.svg#back"></use>
-                                </svg></a>
-                </li>
-                <li class="media-sub-nav-list-item"><a class="media-sub-nav-list-item__link button--white button--icon" href="/insomvita/public/reader.html">
+      <section class="section section--left"><a class="reviews-backButton section-backButton button--dark button--icon" href="">
                           <svg>
-                            <use xlink:href="sprite.svg#read"></use>
-                          </svg></a>
-                </li>
-                <li class="media-sub-nav-list-item"><a class="media-sub-nav-list-item__link button--white button--icon" href="/insomvita/public/media.html">
-                          <svg>
-                            <use xlink:href="sprite.svg#listen"></use>
-                          </svg></a>
-                </li>
-                <li class="media-sub-nav-list-item"><a class="media-sub-nav-list-item__link button--white button--icon" href="/insomvita/public/media.html">
-                          <svg>
-                            <use xlink:href="sprite.svg#video"></use>
-                          </svg></a>
-                </li>
-                <li class="media-sub-nav-list-item"><a class="media-sub-nav-list-item__link button--white button--icon" href="/insomvita/public/media.html">
-                          <svg>
-                            <use xlink:href="sprite.svg#buy"></use>
-                          </svg></a>
-                </li>
-              </ul>
-            </aside>
-      <!-- add class "media--audio" if this is audio page or this is recommended video for user-->
-      <!-- add class "media--video" if this is audio video-->
-      <section class="media media--video"><a class="mobile-menu-button mobile-menu-button--open button--white button--icon" href="">
+                            <use xlink:href="sprite.svg#back"></use>
+                          </svg></a><a class="mobile-menu-button mobile-menu-button--open button--white button--icon" href="">
                           <svg>
                             <use xlink:href="sprite.svg#menu-open"></use>
                           </svg></a>
@@ -149,15 +106,93 @@
                     </li>
                   </ul>
                 </nav>
-        <div class="media-video">
-          <!-- enable props-->
-          <!-- 1. file-->
-          <!-- 2. poster-->
-          <!-- 3. autoplay-->
-          <div id="player" data-player-setup="{&quot;file&quot;:&quot;http://techslides.com/demos/sample-videos/small.webm&quot;}"></div>
+        <div class="reviews-wrapper">
+          <h3 class="reviews__title">залиште  вiдгук</h3>
+          <form class="reviews-form">
+            <div class="reviews-form-control-offset reviews-form-control__name control--error control">
+              <input class="control__element control__element--input" type="text" placeholder="Имя"><span class="control__error">Your error message</span>
+            </div>
+            <div class="reviews-form-control-offset reviews-form-control__secondName control--error control">
+              <input class="control__element control__element--input" type="text" placeholder="Фамилия"><span class="control__error">Your error message</span>
+            </div>
+            <div class="reviews-form-control-offset reviews-form-control__email control--error control">
+              <input class="control__element control__element--input" type="text" placeholder="E-mail"><span class="control__error">Your error message</span>
+            </div>
+            <div class="reviews-form-control-offset reviews-form-social-container__control control--error control">
+              <input class="control__element control__element--input" type="text" placeholder="Instagram"><span class="control__error">Your error message</span>
+            </div>
+            <div class="reviews-form-control-offset reviews-form-social-container__control control--error control">
+              <input class="control__element control__element--input" type="text" placeholder="Facebook"><span class="control__error">Your error message</span>
+            </div>
+            <div class="reviews-form-sex error reviews-form-control-offset">
+              <label class="reviews-form-sex-button button--icon">
+                <input class="reviews-form-sex-button__control" type="radio">
+                <svg>
+                  <use xlink:href="sprite.svg#female"></use>
+                </svg>
+              </label>
+              <label class="reviews-form-sex-button button--icon">
+                <input class="reviews-form-sex-button__control" type="radio">
+                <svg>
+                  <use xlink:href="sprite.svg#male"></use>
+                </svg>
+              </label><span class="control__error reviews-form-sex__error">Your error message</span>
+            </div>
+            <div class="reviews-form-likes error reviews-form-control-offset">
+              <ul class="likes">
+                <li class="likes-item"><a class="likes-item__link" href="#">
+                    <svg>
+                      <use xlink:href="sprite.svg#like"></use>
+                    </svg></a></li>
+                <li class="likes-item"><a class="likes-item__link" href="#">
+                    <svg>
+                      <use xlink:href="sprite.svg#like"></use>
+                    </svg></a></li>
+                <li class="likes-item"><a class="likes-item__link" href="#">
+                    <svg>
+                      <use xlink:href="sprite.svg#like"></use>
+                    </svg></a></li>
+                <li class="likes-item"><a class="likes-item__link" href="#">
+                    <svg>
+                      <use xlink:href="sprite.svg#like"></use>
+                    </svg></a></li>
+                <li class="likes-item"><a class="likes-item__link" href="#">
+                    <svg>
+                      <use xlink:href="sprite.svg#like"></use>
+                    </svg></a></li>
+              </ul>
+              <input class="reviews-form-likes__control" type="hidden" value="0"><span class="control__error reviews-form-likes__error">Your error message</span>
+            </div>
+            <div class="reviews-form-textarea-content control--error">
+              <div class="reviews-form__textarea  control">
+                <textarea class="control__element control__element--textarea" data-counter="" data-limit-value="1500" placeholder="Відгук"></textarea>
+              </div><span class="control__error">Your error message</span>
+              <p class="reviews-form__symbolsCounter"><span data-counter-view>0</span>/1500</p>
+            </div>
+            <button class="reviews-form__submitBtn button button--icon button--ok" type="button">ok</button>
+          </form>
         </div>
       </section>
+      <section class="section section--right">
+      </section>
+      <!-- show this block after success created review-->
+            <!-- if you want to show block add to it class visible-->
+            <div class="review-created review-created--js thanks">
+              <div class="review-created-container">
+                <h4 class="review-created__title">ДЯКУЄМО! ВИ НЕЙМОВІРНІ!</h4>
+                <svg>
+                  <use xlink:href="sprite.svg#like"></use>
+                </svg>
+                <svg>
+                  <use xlink:href="sprite.svg#like"></use>
+                </svg>
+                <svg>
+                  <use xlink:href="sprite.svg#like"></use>
+                </svg>
+              </div>
+              <p class="review-created__text text">Ваш відгук на модерації</p>
+                    <button class="review-created__submit review-created__submit--js button button--icon button--ok" type="button">ok</button>
+            </div>
     </div>
-    <script src="/insomvita/public/static/playerJS.js"></script>
-  <script type="text/javascript" src="common.style.js"></script><script type="text/javascript" src="common.bundle.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="media.js"></script></body>
+  <script type="text/javascript" src="common.style.js"></script><script type="text/javascript" src="common.bundle.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="form.js"></script></body>
 </html>
